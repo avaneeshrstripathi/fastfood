@@ -101,3 +101,9 @@ font-size: larger;
         padding: 8px 16px; /* Adjust button padding */
     }
 }
+
+.Today, #element {
+    display: block; /* Stack the spans vertically */
+    text-align: center; /* Center the text */
+    margin: 5px 0; /* Add space between them */
+}
