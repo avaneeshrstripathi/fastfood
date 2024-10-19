@@ -1,0 +1,70 @@
+/* Pricing section styling */
+.pricing {
+    background-color: #251e19;
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.pricing h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-align: center; /* Ensure the heading is centered */
+}
+
+/* Pricing container: 4 rows and 2 columns */
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    grid-template-rows: repeat(4, auto); /* 4 rows */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Center each price item */
+    width: 80%; /* Control the overall width of the grid */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Individual price item styling */
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; /* Ensure the item takes up full grid cell width */
+    padding: 10px 20px;
+    background-color: #352920; /* Light background for contrast */
+    color: white;
+    border-radius: 5px; /* Optional: Rounded corners */
+    box-shadow: 0 2px 4px rgba(51, 50, 50, 0.1); /* Optional: Subtle shadow */
+    transition: background-color 0.3s ease-in-out; /* Smooth background transition on hover */
+}
+
+/* Hover effect for price-item */
+.price-item:hover {
+    background-color: #240f0f; /* Lighten the background on hover */
+}
+
+/* Name and price text styling */
+.price-item .item-name {
+    padding: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.price-item .item-price {
+    font-size: 1.2rem;
+    color: #f38d09; /* Optional: Color for price */
+    transition: font-size 0.3s ease-in-out; /* Smooth font-size transition */
+}
+
+/* Hover effect for item-price */
+.price-item:hover .item-price {
+    font-weight: bold;
+    font-size: 1.4rem; /* Increase font size slightly on hover */
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+    .pricing-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+        grid-template-rows: repeat(8, auto); /* 8 rows */
+    }
+}

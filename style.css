@@ -1,0 +1,74 @@
+/* पूरे container पर grid लागू करना */
+* {
+  margin: 0;
+  padding: 0;
+  
+  
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* पूरी container में 1 ही कॉलम रहेगा */
+  grid-template-rows: auto;
+  /* हर row की ऊंचाई सामग्री के अनुसार होगी */
+  /* gap: 10px; */
+ 
+}
+
+/* Catalog section को styling */
+.catalog {
+  display: block;
+  /* यह हेडिंग के लिए ब्लॉक फॉर्मेट में रहेगी */
+  padding: 10px;
+  /* border: 1px solid #000; */
+  text-align: center;
+}
+
+.catalog .fooditem-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 कॉलम */
+  grid-template-rows: repeat(3, 1fr);
+  /* 3 rows */
+  /* gap: 10px; */
+  margin-top: 10px;
+}
+
+/* Pricing section को styling */
+.pricing {
+  display: block;
+  /* यह हेडिंग के लिए ब्लॉक फॉर्मेट में रहेगी */
+  padding: 10px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.pricing .price-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 कॉलम */
+  grid-template-rows: repeat(4, 1fr);
+  /* 4 rows */
+  /* gap: 10px; */
+  margin-top: 10px;
+}
+
+/* बाकी sections के लिए basic styling */
+nav,
+section,
+footer {
+  padding: 10px;
+  /* border: 1px solid #000; */
+  text-align: center;
+}
+
+/* Food items और Pricing items की styling */
+.fooditem,
+.price {
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+  text-align: center;
+}

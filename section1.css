@@ -1,0 +1,108 @@
+/* Section styling */
+.section1 {
+background-color:#ffe6ea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 70px 40px;
+    /* border: 1px solid #000; */
+}
+
+/* Main Heading */
+.section1 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Content container */
+.section1 .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    width: 90%;
+    gap: 20px;
+    text-align: left; /* Aligns text to the left */
+}
+
+/* Left-side text (01, Subheading, Paragraph) */
+.text-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Left side takes 50% width */
+}
+
+.text-section .number {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.text-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.text-section .paragraph {
+    font-size: 1rem;
+    line-height: 1.3; /* Improve readability by adjusting line height */
+    word-spacing: 0.05rem;  /* Optional: Adjust word spacing for better readability */
+    text-align: left; /* Ensure the paragraph is left-aligned */
+}
+
+/* Right-side image */
+.image {
+    margin-right: 40px;
+    width: 42%; /* Right side takes 50% width */
+    /* max-width: 100%; */
+    height: auto; /* Keeps image aspect ratio */
+}
+
+
+/* Responsive CSS for Section 1 for screens smaller than 600px */
+@media (max-width: 600px) {
+    .section1 {
+        padding: 30px 15px; /* Adjust padding for small screens */
+    }
+
+    .section1 h1 {
+        font-size: 1.8rem; /* Reduce the main heading size */
+        margin-bottom: 15px; /* Adjust the space below the heading */
+    }
+
+    .section1 .content {
+        flex-direction: column; /* Stack content vertically */
+        width: 100%; /* Full width of the container */
+        align-items: center; /* Center the content */
+        gap: 10px; /* Reduce the gap between elements */
+    }
+
+    .text-section {
+        width: 100%; /* Full width for the text section */
+        text-align: center; /* Center the text for small screens */
+    }
+
+    .text-section .number {
+        font-size: 1.4rem; /* Adjust "01" size */
+        margin-bottom: 8px; /* Adjust space below the number */
+    }
+
+    .text-section h2 {
+        font-size: 1.4rem; /* Smaller subheading size */
+        margin-bottom: 10px; /* Adjust space below subheading */
+    }
+
+    .text-section .paragraph {
+        font-size: 0.9rem; /* Reduce paragraph font size */
+        line-height: 1.4; /* Maintain readability with a good line height */
+        text-align: left; /* Keep paragraph text aligned left */
+    }
+
+    .image {
+        width: 100%; /* Image takes full width */
+        max-width: 85%; /* Ensure the image doesn't exceed screen width */
+        margin: 20px auto; /* Add margin for space around the image */
+    }
+}

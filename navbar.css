@@ -1,0 +1,68 @@
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+    background-color: #e78731; /* Dark background */
+    padding: 10px 20px; /* Padding around the navbar */
+    top: 0; /* Stick to the top of the page */
+    z-index: 1000; /* Ensure it is above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Logo Styling */
+.logo img {
+    height: 50px; /* Adjust logo height */
+    width: auto; /* Keep aspect ratio */
+    margin-left: 35px;
+}
+
+/* Unordered List Styles */
+nav ul {
+    list-style: none; /* Remove default bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for horizontal layout */
+    gap: 15px; /* Space between list items */
+}
+
+/* List Item Styling */
+nav ul li {
+    display: inline; /* Display list items inline */
+}
+
+/* Link Styling */
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Text color */
+    transition: color 0.3s ease; /* Transition effect for hover */
+}
+
+/* Link Hover Effect */
+nav ul li a:hover {
+    color:rgb(255, 255, 255); /* Change color on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack links vertically on small screens */
+        align-items: center; /* Center align the items */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Space between links */
+    }
+}
+
+
+/* Hamburger Button Styling */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 24px; /* Size of the hamburger icon */
+    background: none; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+}

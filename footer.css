@@ -1,0 +1,34 @@
+/* Footer Styling */
+.site-footer {
+    padding: 40px 20px; /* Padding to make the footer wider and more spacious */
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    text-align: center; /* Center-align the text */
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+/* Footer Content Styling */
+.footer-content p {
+    margin: 10px 0; /* Margins between paragraphs */
+    font-size: 1.2rem; /* Font size for the text */
+    line-height: 1.5; /* Adjust line height for readability */
+}
+
+/* Adjust the copyright text */
+.footer-content p:last-child {
+    font-size: 1rem; /* Slightly smaller font for copyright text */
+    margin-top: 20px; /* Additional margin above the copyright */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .site-footer {
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .footer-content p {
+        font-size: 1rem; /* Adjust font size for readability */
+    }
+}

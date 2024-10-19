@@ -1,0 +1,79 @@
+/* Section 2 */
+.section2 {
+    padding: 70px 40px; /* Add padding */
+    background-color: #f4f4f4; /* Background color */
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Align items at the start */
+    gap: 35px;
+    /* min-height: 100vh;  */
+}
+
+/* Image styling */
+.section2 .image {
+    width: 40%; /* Width for image container */
+    max-width: 100%; /* Responsive */
+}
+
+.section2 .image img {
+    width: 100%; /* Image takes full width of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Content styling */
+.section2 .content {
+    width: 60%; /* Width for text content */
+    padding-left: 20px; /* Space between image and text */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align text to the left */
+}
+
+.section2 .content h1 {
+    font-size: 2.5rem; /* Font size for "02" */
+    margin-bottom: 10px; /* Space below */
+}
+
+.section2 .content h2 {
+    font-size: 2rem; /* Font size for subheading */
+    margin-bottom: 0px;/* Space bottom */
+    margin-top: 5px; /* Space top */
+}
+
+
+.section2 .content p {
+    font-size: 1rem; /* Font size for paragraph */
+    margin-bottom: 20px; /* Space below paragraph */
+    text-align: left; /* Ensure text is aligned to the left */
+    line-height: 1.3; /* Improve readability by adjusting line height */
+    margin-top: 0; /* Ensure no extra space at the top of the paragraph */
+    margin-right: 15px;
+    padding-right: 30px;
+    word-spacing: 0.05rem;  /* Optional: Adjust word spacing for better readability */
+}
+
+
+/* Media Query for Mobile Devices (up to 600px wide) */
+@media (max-width: 600px) {
+
+    /* Section 2 - Adjust for small screens */
+    .section2 {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center the content vertically */
+    }
+
+    .section2 .image, 
+    .section2 .content {
+        width: 100%; /* Full width for both image and content */
+        padding-left: 0; /* Remove extra padding */
+    }
+
+    .section2 .content {
+        text-align: center; /* Center text on small screens */
+        align-items: center; /* Center text and other elements */
+    }
+
+    .section2 .content h1, 
+    .section2 .content h2, 
+    .section2 .content p {
+        text-align: center; /* Center align the text */
+    }}

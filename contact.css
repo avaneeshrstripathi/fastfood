@@ -1,0 +1,127 @@
+/* Contact Section Styling */
+.contact-section {
+    padding: 50px 40px;
+    background-color: #f38d09;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+/* Container to hold both image and contact form */
+.contact-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    /* max-width: 1200px; */
+    gap: 40px; /* Space between image and form */
+}
+
+/* Left-side Image */
+.contact-section .contact-image img {
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+/* Right-side Contact Details and Form */
+.contact-section .contact-details {
+    width: 170%;
+}
+
+.contact-section .contact-details h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-section .contact-details p {
+    color: white;
+    text-align: left;
+    word-spacing: 0.05rem;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Form styling */
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form elements */
+}
+
+/* Form Row for email and name fields side by side */
+.contact-section .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Form Group styling for label and input */
+.contact-section .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.contact-section .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: left; /* Align labels to the left */
+}
+
+/* Input and Textarea styling */
+.contact-section input, .contact-section textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+/* .contact-section input, .contact-section textarea */
+ #message {
+    width: 200%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+
+
+}
+.contact-section textarea {
+    resize: none; /* Disable resizing for message box */
+}
+
+/* Submit button styling */
+.contact-section button {
+    width: 30%;
+    padding: 12px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-section button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-section .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-section .contact-image, .contact-section .contact-details {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .contact-section .form-row {
+        flex-direction: column; /* Stack email and name fields vertically */
+    }
+}

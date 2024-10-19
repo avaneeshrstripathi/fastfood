@@ -1,0 +1,80 @@
+/* Catalog section styling */
+.catalog {
+    background-color: #f38d09;
+    padding: 40px 20px;
+    text-align: center; /* Center-align the heading */
+}
+
+.catalog h2 {
+    color: white;
+    font-size: 2.5rem; /* Size of the catalog heading */
+    margin-bottom: 50px;
+    text-align: center; /* Ensure heading is centered */
+}
+
+/* Grid container for food items */
+.catalog .fooditem-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    grid-gap: 20px; /* Gap between items */
+    justify-items: center; /* Center the items */
+    align-items: start; /* Align items at the top */
+    margin-bottom: 20px;
+}
+
+/* Food item styling */
+.catalog .fooditem {
+    position: relative;
+}
+
+/* Image container styling */
+.image-container {
+    width: 200px; /* Width of the food item image */
+    height: 200px; /* Height of the food item image */
+    overflow: hidden; /* Hide overflow for zoom effect */
+    position: relative;
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.image-container img {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Cover the container, showing the center part of the image */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect on hover */
+}
+
+/* Zoom effect on hover */
+.image-container:hover img {
+    transform: scale(1.2); /* Zoom in on hover */
+}
+
+/* Overlay (food name) styling */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    color: white; /* White text */
+    width: 100%; /* Full width of the container */
+    text-align: center; /* Center-align the text */
+    /* padding: 10px; */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
+}
+
+
+
+
+/* Show the overlay on hover */
+.image-container:hover .overlay {
+    opacity: 1; /* Fade in the overlay */
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+    .catalog .fooditem-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+        grid-gap: 15px; /* Adjust gap for small screens */
+    }
+}

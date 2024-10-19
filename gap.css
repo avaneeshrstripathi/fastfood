@@ -1,0 +1,54 @@
+/* Gap Section */
+.gap {
+    padding: 40px 50px; /* Add padding for spacing */
+    color: white;
+    background-color: #2a2222; /* Background color for section */
+    text-align: center; /* Center the content */
+}
+
+/* Main Heading Styling */
+.gap h1 {
+    font-size: 3rem; /* Font size for main heading */
+    margin-bottom: 40px; /* Space below heading */
+    color: white; /* Dark text color */
+}
+
+/* Contact Button Styling */
+.gap #contact-btn {
+    display: inline-block; /* Inline block for proper button styling */
+    padding: 10px 30px; /* Padding inside the button */
+    margin-bottom: 15px;
+    font-size: 1.2rem; /* Button text size */
+    background-color: white; /* Button background color */
+    color: black; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.gap #contact-btn:hover {
+    background-color: #eedc39; /* Darker shade on hover */
+}
+
+
+
+
+/* Media Query for Mobile Devices (up to 600px wide) */
+@media (max-width: 600px) {
+
+    /* Section 2 - Adjust for small screens */
+  /* Gap Section */
+  .gap {
+    padding: 50px 20px; 
+    /* Adjust padding for smaller screens */
+}
+
+.gap h1 {
+    font-size: 2rem; /* Smaller font size for the heading */
+}
+
+.gap #contact-btn {
+    padding: 8px 20px; /* Adjust button padding */
+    font-size: 1rem; /* Smaller text for the button */
+}
+}

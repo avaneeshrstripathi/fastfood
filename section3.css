@@ -1,0 +1,94 @@
+/* Section 3 */
+.section3 {
+    background-color:#ffe6ea;
+    display: flex; /* Flexbox for side-by-side layout */
+    align-items: center; /* Vertically align the content */
+    justify-content: space-between; /* Space between content and image */
+    padding: 70px 40px; /* Padding around the section */
+
+    
+}
+
+/* Content on the left */
+.section3 .content {
+    width: 50%; /* Take 50% of the container */
+    padding-right: 20px; /* Space between text and image */
+    text-align: left; /* Left-align the text */
+}
+
+.section3 .content h1 {
+    font-size: 3rem; /* Larger font size for "03" */
+    margin-bottom: 10px; /* Space below the number */
+}
+
+.section3 .content h2 {
+    font-size: 2rem; /* Subheading size */
+    margin-bottom: 15px; /* Space below subheading */
+}
+
+.section3 .content p {
+    font-size: 1.2rem; /* Paragraph font size */
+    margin-bottom: 20px; /* Space below paragraph */
+    line-height: 1.6; /* Line height for readability */
+}
+
+/* Image on the right */
+.section3 .image {
+    width: 50%; /* Image takes up 50% of the container */
+    text-align: right; /* Align image to the right */
+}
+
+.section3 .image img {
+    width: 100%; /* Image fills its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+/* Media Query for Mobile Devices (up to 600px wide) */
+@media (max-width: 600px) {
+    .section3 {
+        flex-direction: column; /* Stack content and image vertically */
+        text-align: center; /* Center-align text for small screens */
+    }
+
+    .section3 .content {
+        width: 100%; /* Full width for text */
+        padding-right: 0; /* Remove right padding on small screens */
+    }
+
+    .section3 .image {
+        width: 100%; /* Full width for image */
+        margin-top: 20px; /* Space between text and image */
+        text-align: center; /* Center image on small screens */
+    }
+
+    .section3 .image img {
+        width: 100%; /* Image takes full width on small screens */
+    }
+}
+
+/* Media Query for Extra Small Devices (up to 480px wide) */
+@media (max-width: 480px) {
+    .section3 {
+        padding: 50px 10px; /* Reduce padding for smaller screens */
+    }
+
+    .section3 .content h1 {
+        font-size: 2rem; /* Smaller font size for "03" */
+    }
+
+    .section3 .content h2 {
+        font-size: 1.5rem; /* Smaller subheading size */
+    }
+
+    .section3 .content p {
+        font-size: 1rem; /* Smaller paragraph font */
+    }
+    .section3 .content h1, 
+    .section3 .content h2, 
+    .section3 .content p {
+        text-align: center; /* Center align the text */
+    }
+}

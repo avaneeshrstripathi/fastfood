@@ -1,0 +1,103 @@
+/* Home section with background image */
+.home {
+    background-image: url('Home.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position : relative;
+}
+
+/* Dark overlay for better readability */
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+/* Content inside home section */
+.home .content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    /* letter-spacing: 2px; */
+}
+.Today {
+    font-weight: bold;
+    font-size: x-large;
+    color: rgb(255, 136, 0);
+
+}
+
+#element {
+color: rgb(137, 243, 184);
+font-size: larger;
+
+}
+.home h2 {
+    /* font-size: 1rem; */
+    margin-bottom: 35px;
+    /* letter-spacing: 1px; */
+}
+
+/* Read More Button */
+.read-more-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff6347; /* Button background color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #ff4500; /* Button hover effect */
+}
+
+/* Catalog Section Styling */
+.catalog {
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.catalog h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+/* Responsive styles for home section */
+@media (max-width: 600px) {
+    .home {
+        height: auto; /* Allow height to adjust */
+        padding: 40px 20px; /* Add some padding for smaller screens */
+    }
+
+    .home h1 {
+        font-size: 2.5rem; /* Smaller font size for heading */
+    }
+
+    .home h2 {
+        font-size: 1.5rem; /* Smaller font size for subheading */
+    }
+
+    .read-more-btn {
+        font-size: 1rem; /* Smaller font size for button */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}

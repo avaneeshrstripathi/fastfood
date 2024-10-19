@@ -1,0 +1,72 @@
+/* About Bakery section styling */
+.about-bakery {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+/* Content container to align text and image */
+.about-bakery .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    gap: 30px; /* Space between the left and right sections */
+}
+
+/* Left side text-section */
+.text-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Takes 50% of the available space */
+}
+
+.subheading {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.paragraph {
+    font-size: 1rem;
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 20px;
+}
+
+/* Signature image styling */
+.signature {
+    width: 150px; /* Adjust the width of the signature */
+    margin-top: 10px;
+}
+
+/* Right side image-section */
+.image-section {
+    width: 40%; /* Takes 40% of the available space */
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+    .about-bakery .content {
+        flex-direction: column; /* Stack the text and image vertically */
+        align-items: center;
+    }
+
+    .text-section, .image-section {
+        width: 100%; /* Full width for both sections */
+    }
+
+    .subheading {
+        text-align: center; /* Center the subheading on smaller screens */
+    }
+
+    .paragraph, .signature {
+        text-align: center; /* Center the paragraph and signature */
+    }
+}
