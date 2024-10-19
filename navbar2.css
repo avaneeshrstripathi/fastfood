@@ -1,16 +1,18 @@
 @media (max-width: 960px) {
     .hamburger {
         display: block; /* Show hamburger button */
+         z-index: 1001; /* Keeps it above other elements */
     }
     
     nav ul {
         display: none; /* Hide the nav links initially */
         flex-direction: column; /* Stack links vertically */
-        position: absolute; /* Position it absolute for dropdown effect */
+        position: fixed;
         top: 60px; /* Adjust based on navbar height */
         left: 0; /* Align to left */
         background-color: #fff; /* Background for dropdown */
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+        z-index: 1000; /* Ensures the menu stays above the content */
     }
 
     nav ul.show {
